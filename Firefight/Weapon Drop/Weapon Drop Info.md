@@ -1,4 +1,4 @@
-Weapon Drop Control ===================================================
+Weapon Drop Control ==================================================
 Controls Supply Drops, Grenade Resupply, and the Longsword 
 
 
