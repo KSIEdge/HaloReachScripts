@@ -16,3 +16,7 @@
 (map extra scripts)**
 
 ** indicates an optional script
+
+Keep in Mind, scripting order does not matter too much.
+Also keep in mind, the scripts between each maps are
+very inconsistent with the methods used to make firefight work
