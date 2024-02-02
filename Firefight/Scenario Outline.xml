@@ -5,6 +5,7 @@
 (global variables)
 (script startup [map name])
 (secondary scripts)
+(objective scripts)
 (phantom command scripts)
 (phantom_bonus script)
 (banshee scripts)**
