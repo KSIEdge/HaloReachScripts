@@ -14,3 +14,4 @@ Contains: Laser Rocket Sniper
 
 Target contains a Target_Laser if enabled. Also sets Target_Laser ammo and refils.
 Resupply only contains normal weapons. Weapon types can be changed.
+*/
