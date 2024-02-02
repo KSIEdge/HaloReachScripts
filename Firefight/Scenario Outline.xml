@@ -1,0 +1,17 @@
+===========================================================
+==== Scenario Outline =====================================
+===========================================================
+
+(global variables)
+(script startup [map name])
+(secondary scripts)
+(phantom command scripts)
+(phantom_bonus script)
+(banshee scripts)**
+(sniper scripts)**
+(covenant squad drop control)
+(weapon drop control)
+(kill volume scripts)**
+(map extra scripts)**
+
+** indicates an optional script
