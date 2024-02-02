@@ -46,7 +46,7 @@ You should be now left with a new map but with prexisting firefight objects
 
    Player Spawn Blocks: 1-5 Human 6-11 Elite 12-13 Human 14-15 Elite
    Trigger Volumes: Kill, Safe Zones, Garbage/Recycle Zones
-   Grenade and Ammo Crates
+   Health Pack, Grenade, and Ammo Crates
    AI Formations
    ...theres is a lot of objects but these are the most important
 
@@ -61,5 +61,15 @@ You should be now left with a new map but with prexisting firefight objects
    Select zones in order to create a path of movement, keep it simple though.
 6. Fine tune map objects and AI instructions
 7. Done
+
+===========================================================
+
+Cant update/edit script data points IE. change its position in sapien?
+In the main firefight scenario, In the "scripting data" field, 
+For every phantom/fork in the "point sets" and under "points"
+change the "structure bsp tag" to a current one used in zone set.
+
+Without changing this to a BSP that is being currently used within the zone set, 
+sapien prevents the script data points from being moved/edited
 
 ===========================================================
