@@ -1,0 +1,65 @@
+===========================================================
+==== Sapien Foundation Hints ==============================
+===========================================================
+
+Tilda key [~] opens a inline interface within the ingame window in Sapien
+This can be used in combination with scripts to test them.
+
+ff10_prototype has a few examples such as the testing of the longsword supply drops
+
+Script:
+(script static void test_longsword_drop ...)
+
+Type "test_longsword_drop" and hit [Enter] to run the script
+
+===========================================================
+
+How to Make a Firefight map from Campaign (fast)
+
+1.  Identify a area of a Campaign Map to Use.
+2.  Load the Campaign scenario in sapien.
+3.  Identify the BSPs within that Zone Set. IE. m10_010, m10_020, m10_000
+    Use [ctrl] + [b] to change between zone sets
+    Usually campaign maps label their zonesets with the bsps they used
+
+4.  In foundation open both the firefight map scenario and the campaign mission scenario which
+    the firefight map is from.
+5.  In the campaign mission scenario under the "structure bsps" field use the drop down 
+    and select one of the needed bsps.
+6.  Copy the required BSPs over and insert/append them into the structure bsps field in the
+    firefight map scenario until all required are added.
+7.  Update the Zone Set "set_firefight" in the firefight scenario with the correct bsps. 
+    Reference the checked boxes in the campaign scenario zone set.
+
+8.  In foundation open both the firefight and the campaign map's _faux_lightmap.scenario_lightmap file.
+9.  In the campaign map's lightmap file under the "lightmap BSP references" field use the drop down 
+    and select one of the needed bsps.
+10. Copy the required BSPs over and insert/append them into the lightmap BSP references field in the
+    firefight map scenario until all required are added.
+11. Double check that the file path of modified scenario lightmap file is under the "new lightmaps"
+    field in the main firefight scenario file.
+
+To Fix Map Lighting: Do Steps 8-11.
+You should be now left with a new map but with prexisting firefight objects
+
+1. In Sapien drag drop alls objects into the new map area
+
+   Player Spawn Blocks: 1-5 Human 6-11 Elite 12-13 Human 14-15 Elite
+   Trigger Volumes: Kill, Safe Zones, Garbage/Recycle Zones
+   Grenade and Ammo Crates
+   AI Formations
+   ...theres is a lot of objects but these are the most important
+
+2. In Zones under the AI folder, create a new sur_zones within the map space.
+   You can delete the existing one. Make sure to generate firing positions.
+3. Update obj_survival with the new zones so AI can work.
+   When clicking on obj_survival a screen pops up, this screen is basically AI guidance to move. 
+4. Remove ONLY existing movement instructions within obj_survival.
+5. Create new movement instructions within obj_survival.
+   The draggable cube indicates where the AI is currently is.
+   Arrows indicate the direction of movement the AI will take.
+   Select zones in order to create a path of movement, keep it simple though.
+6. Fine tune map objects and AI instructions
+7. Done
+
+===========================================================
