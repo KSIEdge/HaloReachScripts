@@ -21,3 +21,12 @@ Script order does not matter, but variables do
 
 Use DLC maps for best reference and optomized clean scripts
 Developers were figuring out firefight through half of their non-dlc maps
+
+===========================================================
+==== Firefight Map Objects ================================
+===========================================================
+
+supply drops 0-9
+phantoms 4x
+ammo_crate01
+ammo_crate02
