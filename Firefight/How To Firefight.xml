@@ -19,12 +19,13 @@
 
 Script order does not matter, but variables do
 
-Use DLC maps for best reference and optomized clean scripts
+Use DLC maps for best reference and for optomized clean scripts
 Developers were figuring out firefight through half of their non-dlc maps
 
 ===========================================================
 ==== Firefight Map Objects ================================
 ===========================================================
+These are map objects required by global_firefight.hsc to work
 
 supply drops 0-9
 phantoms 4x
@@ -33,3 +34,14 @@ h_grenade_crate
 EQUIPMENT
 ammo_crate0 ammo_box
 ammo_crate1 ammo_box
+
+===========================================================
+Firefight Folders with Special Properties
+After every round respawn items within these folders.
+scenery      sc_survival
+crates       cr_survival
+vehicles     v_survival
+equipment    eq_survival
+weapons      wp_survival
+devices      dc_survival
+
