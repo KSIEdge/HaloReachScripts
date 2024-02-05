@@ -129,24 +129,25 @@ gr_survival_remaining
 gr_survival_phantoms
 gr_survival_waves
 gr_survival_fireteams
-gr_survival_cov_drop_pod
-gr_survival_sniper_01
-gr_survival_sniper_02
-gr_survival_ghost_01
-gr_survival_ghost_02
-gr_survival_ghosts
-gr_survival_banshee_01
-gr_survival_banshee_02
-gr_survival_banshees
-gr_survival_wraith_01
-gr_survival_wraith_02
-gr_survival_wraiths
-gr_survival_marines_followers
-gr_survival_marines_defenders
+gr_survival_cov_drop_pod (gr_survival_extras)
+gr_survival_sniper_01 (gr_survival_snipers)
+gr_survival_sniper_02 (gr_survival_snipers)
+gr_survival_snipers (gr_survival_extras)
+gr_survival_ghost_01 (gr_survival_ghosts)
+gr_survival_ghost_02 (gr_survival_ghosts)
+gr_survival_ghosts (gr_survival_extras)
+gr_survival_banshee_01 (gr_survival_banshees)
+gr_survival_banshee_02 (gr_survival_banshees)
+gr_survival_banshees (gr_survival_extras)
+gr_survival_wraith_01 (gr_survival_wraiths)
+gr_survival_wraith_02 (gr_survival_wraiths)
+gr_survival_wraiths (gr_survival_extras)
+gr_survival_marines_followers (gr_survival_marines)
+gr_survival_marines_defenders (gr_survival_marines)
 gr_survival_marines
 
 waves
-sq_sur_wave_01
+sq_sur_wave_01(gr_survival_waves)
 sq_sur_wave_02
 sq_sur_wave_03
 sq_sur_wave_04
@@ -171,7 +172,7 @@ sq_sur_phantom_02
 sq_sur_phantom_03
 sq_sur_phantom_04
 sq_sur_bonus_phantom
-sq_sur_drop_01
+sq_sur_drop_01(gr_survival_cov_drop_pod)
 sq_sur_drop_02
 sq_sur_drop_03
 sq_sur_drop_04
