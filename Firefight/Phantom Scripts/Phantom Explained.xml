@@ -1,0 +1,8 @@
+; What sort of dropship to use
+; 0 - No dropships (overrides variant settings)
+; 1 - Phantoms
+; 2 - Spirits
+s_sur_dropship_type 1
+s_sur_dropship_crew_count 2) ; How many AI are in the dropship crews
+
+cr_fx_lightning fx_m30_screenfx_lightning
