@@ -1,0 +1,247 @@
+type  solo
+flags survival
+airstrike objects\weapons\pistol\target_laser\projectiles\default
+required resources levels\firefight\firefight_required_resources
+
+dm_generators
+generator0 	generator_x_large
+generator1 	generator_x_large
+generator2 	generator_x_large
+
+dm_droppods
+dm_resupply_01 invis_resupply_capsule
+dm_resupply_02 invis_resupply_capsule
+dm_resupply_03 invis_resupply_capsule
+dm_resupply_04 invis_resupply_capsule
+dm_resupply_05 invis_resupply_capsule
+dm_resupply_06 invis_resupply_capsule
+dm_resupply_07 invis_resupply_capsule
+dm_resupply_08 invis_resupply_capsule
+dm_resupply_09 invis_resupply_capsule
+dm_target_01   invis_resupply_capsule
+dm_target_02   invis_resupply_capsule
+dm_target_03   invis_resupply_capsule
+
+dm_droprails
+dm_drop_01	invis_cov_squad_drop_pod
+dm_drop_02	invis_cov_squad_drop_pod
+dm_drop_03	invis_cov_squad_drop_pod
+dm_drop_04	invis_cov_squad_drop_pod
+dm_drop_05	invis_cov_squad_drop_pod
+
+dm_longsword
+dm_longsword_01 longsword
+
+dc_survival
+health_pack0 	health_station
+health_pack1 	health_station
+health_pack2 	health_station
+health_pack3 	health_station
+health_pack4 	health_station
+health_pack5 	health_station
+
+dc_generator_switches
+generator_switch0		invisible_switch_gen
+generator_switch1		invisible_switch_gen
+generator_switch2		invisible_switch_gen
+generator_switch_cool0		invisible_switch_gen_cool
+generator_switch_cool1		invisible_switch_gen_cool
+generator_switch_cool2		invisible_switch_gen_cool
+generator_switch_disabled0	invisible_switch_gen_disabled
+generator_switch_disabled1	invisible_switch_gen_disabled
+generator_switch_disabled2	invisible_switch_gen_disabled
+
+Device groups
+gen0
+gen1
+gen2
+
+eq_survival
+
+eq_ammo_crates
+ammo_crate0	ammo_box
+ammo_crate1	ammo_box
+
+wp_survival
+v_survival
+
+sc_camera_objects
+spartan_camera	mp_cinematic_camera
+elite_camera	mp_cinematic_camera
+
+sc_respawn_zone
+spartan_01	firefight_respawn_zone
+spartan_02	firefight_respawn_zone
+spartan_03	firefight_respawn_zone
+spartan_04	firefight_respawn_zone
+spartan_05	firefight_respawn_zone
+spartan_06	firefight_respawn_zone
+elite_01	firefight_respawn_zone
+elite_02	firefight_respawn_zone
+elite_03	firefight_respawn_zone
+elite_04	firefight_respawn_zone
+elite_05	firefight_respawn_zone
+elite_06	firefight_respawn_zone
+
+sc_resupply_pods
+sc_hack_laser	resupply_capsule
+sc_hack_sniper	resupply_capsule
+sc_hack_rocket	resupply_capsule
+sc_hack_target	resupply_capsule
+sc_resupply_01 	resupply_capsule
+sc_resupply_02 	resupply_capsule
+sc_resupply_03 	resupply_capsule
+sc_resupply_04 	resupply_capsule
+sc_resupply_05 	resupply_capsule
+sc_resupply_06 	resupply_capsule
+sc_resupply_07 	resupply_capsule
+sc_resupply_08 	resupply_capsule
+sc_resupply_09 	resupply_capsule
+sc_target_01	resupply_capsule
+sc_target_02	resupply_capsule
+sc_target_03	resupply_capsule
+
+sc_survival
+NONE		health_cabinet
+NONE		health_cabinet
+NONE		health_cabinet
+NONE		health_cabinet
+NONE		health_cabinet
+NONE		health_cabinet
+
+sc_placed
+sc_pathfinding_helpers
+railing_guide	pathfinding_helper_railing_guide
+railing		pathfinding_helper_railing
+
+cr_grenades
+NONE		h_grenade_crate
+NONE		h_grenade_crate
+
+cr_survival
+cr_easteregg
+
+Squad groups
+gr_survival_all
+gr_survival_extras
+gr_survival_bonus
+gr_survival_remaining
+gr_survival_phantoms
+gr_survival_waves
+gr_survival_fireteams
+gr_survival_cov_drop_pod
+gr_survival_sniper_01
+gr_survival_sniper_02
+gr_survival_ghost_01
+gr_survival_ghost_02
+gr_survival_ghosts
+gr_survival_banshee_01
+gr_survival_banshee_02
+gr_survival_banshees
+gr_survival_wraith_01
+gr_survival_wraith_02
+gr_survival_wraiths
+gr_survival_marines_followers
+gr_survival_marines_defenders
+gr_survival_marines
+
+waves
+sq_sur_wave_01
+sq_sur_wave_02
+sq_sur_wave_03
+sq_sur_wave_04
+sq_sur_wave_05
+sq_sur_wave_06
+sq_sur_wave_07
+sq_sur_wave_08
+sq_ff_bonus
+
+elite_fireteams
+sq_elite_fireteam_01
+sq_elite_fireteam_02
+sq_elite_fireteam_03
+sq_elite_fireteam_04
+sq_elite_fireteam_05
+sq_elite_fireteam_06
+
+extras
+sq_sur_remaining
+sq_sur_phantom_01
+sq_sur_phantom_02
+sq_sur_phantom_03
+sq_sur_phantom_04
+sq_sur_bonus_phantom
+sq_sur_drop_01
+sq_sur_drop_02
+sq_sur_drop_03
+sq_sur_drop_04
+sq_sur_drop_05
+sq_sur_sniper_01
+sq_sur_sniper_02
+sq_sur_ghost_01
+sq_sur_ghost_02
+sq_sur_banshee_01
+sq_sur_banshee_02
+sq_sur_wraith_01
+sq_sur_wraith_02
+sq_sur_pelican
+sq_marines_01
+sq_marines_02
+sq_marines_player_follwers
+
+Zones
+zn_survival
+
+Objectives
+obj_survival
+obj_fireteams
+obj_marines
+
+Quick Cues
+sniper_cue	long_vision
+
+Thespian
+marines/marines
+
+Script data -> Point sets
+ps_sur_phantom_01
+ps_sur_phantom_02
+ps_sur_phantom_03
+ps_sur_phantom_04
+ps_sur_bonus_phantom
+ps_gen
+ps_banshee_01
+ps_banshee_02
+ps_wraith
+ps_sur_pelican
+
+Player starting points
+ 0.survival mode	scenario_players_block
+ 1.survival mode	scenario_players_block
+ 2.survival mode	scenario_players_block
+ 3.survival mode	scenario_players_block
+ 4.survival mode	scenario_players_block
+ 5.survival mode	scenario_players_block
+ 6.survival mode elite	scenario_players_block
+ 7.survival mode elite	scenario_players_block
+ 8.survival mode elite	scenario_players_block
+ 9.survival mode elite	scenario_players_block
+10.survival mode elite	scenario_players_block
+11.survival mode elite	scenario_players_block
+12.survival mode	scenario_players_block
+13.survival mode	scenario_players_block
+14.survival mode elite	scenario_players_block
+15.survival mode elite	scenario_players_block
+
+Trigger Volumes
+safe_zone_soft
+tv_sur_garbage_all
+tv_sur_garbage_weapon
+tv_sniper_01
+tv_sniper_02
+tv_wraith_01
+tv_wraith_02
+
+Starting profiles
+player starting profile_0 assault_rifle32/64 magnum8/16 frag1 sprint
+player starting profile_1 plasma_repeater plasma_pistol plasma1 evade
