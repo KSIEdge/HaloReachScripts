@@ -124,11 +124,11 @@ cr_easteregg
 Squad groups
 gr_survival_all
 gr_survival_extras
-gr_survival_bonus
+gr_survival_bonus (gr_survival_all)
 gr_survival_remaining
 gr_survival_phantoms
-gr_survival_waves
-gr_survival_fireteams
+gr_survival_waves (gr_survival_all)
+gr_survival_fireteams (gr_survival_waves)
 gr_survival_cov_drop_pod (gr_survival_extras)
 gr_survival_sniper_01 (gr_survival_snipers)
 gr_survival_sniper_02 (gr_survival_snipers)
@@ -144,51 +144,51 @@ gr_survival_wraith_02 (gr_survival_wraiths)
 gr_survival_wraiths (gr_survival_extras)
 gr_survival_marines_followers (gr_survival_marines)
 gr_survival_marines_defenders (gr_survival_marines)
-gr_survival_marines
+gr_survival_marines (gr_survival_extras)
 
 waves
 sq_sur_wave_01(gr_survival_waves)
-sq_sur_wave_02
-sq_sur_wave_03
-sq_sur_wave_04
-sq_sur_wave_05
-sq_sur_wave_06
-sq_sur_wave_07
-sq_sur_wave_08
-sq_ff_bonus
+sq_sur_wave_02 ^
+sq_sur_wave_03 ^
+sq_sur_wave_04 ^
+sq_sur_wave_05 ^
+sq_sur_wave_06 ^
+sq_sur_wave_07 ^
+sq_sur_wave_08 ^
+sq_ff_bonus (gr_survival_bonus)
 
 elite_fireteams
-sq_elite_fireteam_01
-sq_elite_fireteam_02
-sq_elite_fireteam_03
-sq_elite_fireteam_04
-sq_elite_fireteam_05
-sq_elite_fireteam_06
+sq_elite_fireteam_01 (gr_survival_fireteams)
+sq_elite_fireteam_02 ^
+sq_elite_fireteam_03 ^
+sq_elite_fireteam_04 ^
+sq_elite_fireteam_05 ^
+sq_elite_fireteam_06 ^
 
 extras
-sq_sur_remaining
-sq_sur_phantom_01
-sq_sur_phantom_02
-sq_sur_phantom_03
-sq_sur_phantom_04
-sq_sur_bonus_phantom
+sq_sur_remaining (gr_survival_remaining)
+sq_sur_phantom_01 (gr_survival_phantoms)
+sq_sur_phantom_02 ^
+sq_sur_phantom_03 ^
+sq_sur_phantom_04 ^
+sq_sur_bonus_phantom ^
 sq_sur_drop_01(gr_survival_cov_drop_pod)
-sq_sur_drop_02
-sq_sur_drop_03
-sq_sur_drop_04
-sq_sur_drop_05
-sq_sur_sniper_01
-sq_sur_sniper_02
-sq_sur_ghost_01
-sq_sur_ghost_02
-sq_sur_banshee_01
-sq_sur_banshee_02
-sq_sur_wraith_01
-sq_sur_wraith_02
-sq_sur_pelican
-sq_marines_01
-sq_marines_02
-sq_marines_player_follwers
+sq_sur_drop_02 ^
+sq_sur_drop_03 ^
+sq_sur_drop_04 ^
+sq_sur_drop_05 ^
+sq_sur_sniper_01 (gr_survival_sniper_01)
+sq_sur_sniper_02 (gr_survival_sniper_02)
+sq_sur_ghost_01 (gr_survival_ghost_01)
+sq_sur_ghost_02 (gr_survival_ghost_02)
+sq_sur_banshee_01 (gr_survival_banshee_01)
+sq_sur_banshee_02 (gr_survival_banshee_02)
+sq_sur_wraith_01 (gr_survival_wraith_01)
+sq_sur_wraith_02 (gr_survival_wraith_01)
+sq_sur_pelican (gr_survival_marines)
+sq_marines_01 ^
+sq_marines_02 ^
+sq_marines_player_follwers ^
 
 Zones
 zn_survival
