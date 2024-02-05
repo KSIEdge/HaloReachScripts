@@ -1,7 +1,3 @@
-(wake spider_turret01)
-(wake spider_turret02)
-(wake spider_turret03)
-(wake spider_turret04)
 (global boolean b_spider_turret01 false)
 (global boolean b_spider_turret02 false)
 (global boolean b_spider_turret03 false)
