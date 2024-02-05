@@ -40,22 +40,31 @@
 	(chud_track_object_with_priority (ai_vehicle_get sq_spider_turret04/pilot) 20)	
 	(f_spider_turret sq_spider_turret04/pilot spider_turret_switch04)
 )
-(script dormant blip_spiders
 
-	(f_blip_object spider_turret_switch03 blip_interface)
-	(sleep 15)
-	(device_set_power spider_turret_switch03 1)
-
-	(f_blip_object spider_turret_switch02 blip_interface)
-	(sleep 15)
-	(device_set_power spider_turret_switch02 1)
+(script dormant spider_start
 
 	(f_blip_object spider_turret_switch01 blip_interface)
 	(sleep 15)
+	(f_hud_flash_object sc_spider_turret01)
+	(f_blip_title sc_spider_turret_box01 "WP_CALLOUT_M60_TURRET")
 	(device_set_power spider_turret_switch01 1)
+	
+	(f_blip_object spider_turret_switch02 blip_interface)
+	(sleep 15)
+	(f_hud_flash_object sc_spider_turret02)
+	(f_blip_title sc_spider_turret_box02 "WP_CALLOUT_M60_TURRET")
+	(device_set_power spider_turret_switch02 1)
+	
+	(f_blip_object spider_turret_switch03 blip_interface)
+	(sleep 15)
+	(f_hud_flash_object sc_spider_turret03)
+	(f_blip_title sc_spider_turret_box03 "WP_CALLOUT_M60_TURRET")
+	(device_set_power spider_turret_switch03 1)
 
 	(f_blip_object spider_turret_switch04 blip_interface)
 	(sleep 15)
+	(f_hud_flash_object sc_spider_turret04)
+	(f_blip_title sc_spider_turret_box04 "WP_CALLOUT_M60_TURRET")
 	(device_set_power spider_turret_switch04 1)
 
 )
@@ -63,7 +72,6 @@
 (global boolean b_turret_switch_help FALSE)
 (global short s_turret_online_count 0)
 (global short s_turret_online_old -1)
-
 (script static void (f_spider_turret (ai turret) (device switch)) 
 	(sleep_until
 		(begin
@@ -81,8 +89,7 @@
 			(sleep_until (< (object_get_health (ai_vehicle_get_from_starting_location turret)) 0)1)
 			(object_cannot_take_damage (ai_vehicle_get_from_starting_location turret))
 			(set s_turret_online_count (- s_turret_online_count 1))			
-			(md_140_turret_offline)
-			(print "too much damage turret01!")			
+			(print "too much damage to turret!")			
 			(ai_braindead turret TRUE)
 			(ai_disregard (ai_actors turret) true)
 			(cond
@@ -108,12 +115,11 @@
 	1)
 )
 
-(script dormant spider_counter
+(script dormant spider_count
 	(sleep_until
 		(begin
 			(if (!= s_turret_online_old s_turret_online_count)
 				(begin
-					;(chud_show_screen_objective "")
 					(set s_turret_online_old s_turret_online_count)
 					(cond
 						((= s_turret_online_count 0) 
@@ -163,20 +169,26 @@
 	1)												
 )
 
-(script static void test_spiders
+(script static void spider_test
 	(wake spider_turret01)
 	(wake spider_turret02)
 	(wake spider_turret03)
 	(wake spider_turret04)
-	(wake spider_turret_hud01)
-	(wake spider_turret_hud02)
-	(wake spider_turret_hud03)
-	(wake spider_turret_hud04)	
 	(sleep 10)
-	(wake blip_turrets)
+	(wake spider_start)
 )
 
-(script dormant kill_spiders
+(script static void spider_sleep
+	(cond 
+		((= s_turret_online_count 0) (sleep 600))
+		((= s_turret_online_count 1) (sleep 450))
+		((= s_turret_online_count 2) (sleep 300))
+		((= s_turret_online_count 3) (sleep 150))		
+		((= s_turret_online_count 4) (sleep 90))
+	)
+)
+
+(script dormant spider_kill
 	(sleep_forever spider_turret01)
 	(sleep_forever spider_turret02)
 	(sleep_forever spider_turret03)
@@ -185,7 +197,6 @@
 	(f_unblip_object spider_turret_switch02)
 	(f_unblip_object spider_turret_switch03)			
 	(f_unblip_object spider_turret_switch04)
-	(unblip_all)
 	(chud_track_object (ai_vehicle_get sq_spider_turret01/pilot) FALSE )
 	(chud_track_object (ai_vehicle_get sq_spider_turret02/pilot) FALSE )
 	(chud_track_object (ai_vehicle_get sq_spider_turret03/pilot) FALSE )
