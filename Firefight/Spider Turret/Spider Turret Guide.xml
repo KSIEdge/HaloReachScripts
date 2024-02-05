@@ -1,0 +1,15 @@
+gr_spider_turrets
+sq_spider_turret01	braindead, no enter, player
+-Cells			anti_infantry_turret	diff1
+-Characters 		null_human_default
+-Spawn Points		name: pilot	placescript: cs_stay_in_turret
+
+spider_turret_switch01	turret_switch	2.25 scale Off Cw/oP UBSides
+sc_spider_turret01		anti_infantry_turret NAuto
+sc_spider_turret_box01		invisible_box
+
+spider_start
+spider_count
+spider_test
+spider_sleep
+spider_kill
