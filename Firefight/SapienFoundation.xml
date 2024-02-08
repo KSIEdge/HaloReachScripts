@@ -73,3 +73,15 @@ Without changing this to a BSP that is being currently used within the zone set,
 sapien prevents the script data points from being moved/edited
 
 ===========================================================
+
+How to Trigger Split Mission Resources
+In sapien open the desired map and "Save As" the scenario into a different folder
+In foundation, up the recently saved scenario and search "resources"
+Delete "0. scenario resources block" under the "scenario resources" field and Save the scenario
+In sapien, Compile Scripts and Map Reset, Reopen the map from file
+Split Mission Resources
+Save
+
+===========================================================
+
+
